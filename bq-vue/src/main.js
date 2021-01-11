@@ -1,8 +1,10 @@
 import Vue from 'vue';
+import { firestorePlugin } from 'vuefire';
 import App from './App.vue';
 import './registerServiceWorker';
 import router from './router';
 
+Vue.use(firestorePlugin);
 Vue.config.productionTip = false;
 
 new Vue({
