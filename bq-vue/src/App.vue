@@ -9,6 +9,7 @@
 </template>
 
 <style lang="scss">
+
 #app {
   width: 100%;
   height: auto;
@@ -20,7 +21,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: black;
-  background-image: url(assets/fondo1.jpg);
+  background-image: url(assets/fondo.jpg);
   background-size:cover;
 }
 
