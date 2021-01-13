@@ -2,6 +2,17 @@
   <div class="home">
     <img alt="BQ logo" src="../assets/logo-BQ.png">
     <!-- <HelloWorld msg="Welcome this ir you vue.js app"/> -->
+    <div class="home">
+      <h1>{{ msg }}</h1>
+      <p>
+        Welcome to Burger Queen. Log in to start your orders!
+      </p>
+    </div>
+
+      <p>This is a template</p>
+      <p>This is a template</p>
+      <p>This is a template</p>
+      <p>This is a template</p>
   </div>
 </template>
 
