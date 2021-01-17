@@ -7,24 +7,4 @@
             </li>
         </ul>
     </div>
-
 </template>
-
-<script>
-const db = firebase.firestore();
-
-    export default {
-        data: function(){
-            return {
-                drinks: [],
-            }
-        },
-        firestore: {
-            drinks: db.collection('drinks'),
-        },
-        methods: {
-            addDrink(){
-            }
-        }
-    }
-</script>

@@ -9,21 +9,23 @@
       </p>
     </div>
 
+    <div>
       <p>This is a template</p>
       <p>This is a template</p>
       <p>This is a template</p>
       <p>This is a template</p>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue';
+import Drinks from '@/components/Drinks.vue';
 
 export default {
   name: 'Home',
   components: {
-    // HelloWorld,
+    Drinks,
   },
 };
 </script>

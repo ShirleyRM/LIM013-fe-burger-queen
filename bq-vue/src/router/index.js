@@ -2,7 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Waiter from '../views/Waiter.vue';
 import KitchenBoss from '../views/KitchenBoss.vue';
-import Drinks from '../components/Drinks.vue';
+import Home from '../views/Home.vue';
 
 Vue.use(VueRouter);
 
@@ -10,7 +10,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Drinks,
+    component: Home,
   },
   {
     path: '/Waiter',
@@ -18,7 +18,7 @@ const routes = [
     component: Waiter,
   },
   {
-    path: '/',
+    path: '/KitchenBoss',
     name: 'KitchenBoss',
     component: KitchenBoss,
   },
