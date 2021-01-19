@@ -3,7 +3,6 @@
     <div class="navbar-container">
       <div class="navbar-content">
         <router-link to="/">
-          <i class='bx bxs-home'></i>
         </router-link>
         <router-link to="/Waiter">
           <i class='bx bxs-dish' ></i>
@@ -56,6 +55,7 @@ export default {
 
       &.router-link-exact-active {
         color: black;
+        size: 50%;
       }
     }
   }
