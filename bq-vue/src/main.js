@@ -5,6 +5,7 @@ import './registerServiceWorker';
 import router from './router';
 
 Vue.use(firestorePlugin);
+
 Vue.config.productionTip = false;
 
 new Vue({

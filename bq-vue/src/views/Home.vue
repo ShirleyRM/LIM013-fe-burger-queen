@@ -2,65 +2,70 @@
   <div class="home">
     <img alt="BQ logo" src="../assets/logo-BQ.png">
     <!-- <HelloWorld msg="Welcome this ir you vue.js app"/> -->
-    <div class="home">
-      <h1>{{ msg }}</h1>
-      <p>
-        Welcome to Burger Queen. Log in to start your orders!
-      </p>
-    </div>
-
-    <div>
-      <p>This is a template</p>
-      <p>This is a template</p>
-      <p>This is a template</p>
-      <p>This is a template</p>
+    <div class="body">
+      <h2 class="title">Inicia sesión</h2>
+        <div class="input">
+          <input type="text" placeholder="ejemplo@gmail.com">
+            <div class="icon-input">
+              <i class='bx bxs-user' ></i>
+            </div>
+        </div>
+        <div class="input">
+          <input type="text" placeholder="*******">
+            <div class="icon-input">
+              <i class='bx bxs-key'></i>
+            </div>
+        </div>
     </div>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import Drinks from '@/components/Drinks.vue';
-
-export default {
-  name: 'Home',
-  components: {
-    Drinks,
-  },
-};
-</script>
-
 <style lang="scss">
+.home {
+  margin: 20px;
+}
 #app {
   width: 100%;
   height: auto;
   margin: 0 auto;
   max-width: 1920px;
   min-width: 360px;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: black;
   background-size:cover;
 }
-
 #app img {
-  width: 45%;
+  width: 40%;
   height: auto;
   padding-top: 50px;
 }
-
-#nav {
+.body {
+  margin: auto;
+  width: 50%;
+  max-width: 500px;
   padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+  border: 1px solid rgba(0,0,0,0.2)
+}
+  .input {
+    display:block;
+    position: relative;
+    align-items: center;
+    margin-top: 10px;
+    input {
+      width: 50%;
+      background-color: rgba(235, 234, 230, 0.726);
+      border: 0px;
+      outline: none;
+      padding: 10px;
+      padding-left: 30px;
+      border-radius: 1%;
+      align-items: center;
+    }
+    .icon-input{
+      position: absolute;
+      margin-left: 50px;
     }
   }
-}
 </style>
