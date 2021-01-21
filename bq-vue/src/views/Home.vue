@@ -6,15 +6,11 @@
       <h2 class="title">Inicia sesión</h2>
         <div class="input">
           <input type="text" placeholder="ejemplo@gmail.com">
-            <div class="icon-input">
-              <i class='bx bxs-user' ></i>
-            </div>
+            <div class="icon-input"></div>
         </div>
         <div class="input">
           <input type="text" placeholder="*******">
-            <div class="icon-input">
-              <i class='bx bxs-key'></i>
-            </div>
+            <div class="icon-input"></div>
         </div>
     </div>
   </div>
@@ -46,7 +42,6 @@
   width: 50%;
   max-width: 500px;
   padding: 30px;
-  border: 1px solid rgba(0,0,0,0.2)
 }
   .input {
     display:block;

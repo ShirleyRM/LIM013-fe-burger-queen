@@ -1,16 +1,25 @@
 <template>
 <div>
-  <h3>Breakfast Menu</h3>
+  <h3>Desayunos/h3>
 </div>
 </template>
 
 <script>
+import BreakfastBtn from '@/components/BreakfastBtn.vue';
+import { db } from '../db';
+
 export default {
-  name: 'Breakfast',
-  data(){
+  name: 'breakfast',
+  components: {
+    BreakfastBtn,
+  },
+  data() {
     return {
-      name: 'Desayunos',
-    }
+      Breakfast: [],
+    };
+  },
+  firestore: {
+    breakfast: db.collection('breakfast').orderBy("description", "asc")
   }
 };
 </script>
