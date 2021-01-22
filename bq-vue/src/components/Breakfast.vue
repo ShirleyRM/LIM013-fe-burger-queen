@@ -15,11 +15,11 @@ export default {
   },
   data() {
     return {
-      Breakfast: [],
+      breakfast: [],
     };
   },
   firestore: {
-    breakfast: db.collection('breakfast').orderBy("description", "asc")
+    breakfast: db.collection('breakfast').orderBy("description", "asc"),
   }
 };
 </script>

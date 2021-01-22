@@ -24,7 +24,8 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-@media (min-width:961px) {
+
+@media only screen and (min-width:768px) {
 
   .navbar-container{
     width: 100%;
@@ -42,6 +43,7 @@ export default {
       a icon{
         width: 50px;
         height: 50px;
+        border: blueviolet 5px;
       }
   }
 }
@@ -50,17 +52,21 @@ export default {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
     font-family: 'Rubik', sans-serif;
+    text-align: center;
     color: black;
     background-image: url(assets/fondo.jpg);
     background-size:cover;
   }
   * {
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    }
+    #app img {
+    width: 40%;
+    height: auto;
+    padding-top: 50px;
   }
 }
 </style>

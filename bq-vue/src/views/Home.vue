@@ -13,35 +13,43 @@
             <div class="icon-input"></div>
         </div>
     </div>
+
+    <div class="entrar">
+      <button v-on:click="Entrar"><a href="/Waiter"></a>Entrar</button>
+    </div>
+
+    <Footer/>
   </div>
 </template>
 
+<script>
+import Footer from '../components/Footer.vue';
+
+export default {
+  name: 'Home',
+  components: {
+    Footer,
+  },
+};
+</script>
+
 <style lang="scss">
+
 .home {
-  margin: 20px;
-}
-#app {
+  margin: 0, auto;
   width: 100%;
-  height: auto;
-  margin: 0 auto;
-  max-width: 1920px;
-  min-width: 360px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: black;
-  background-size:cover;
+  height: 735px;
 }
-#app img {
-  width: 40%;
-  height: auto;
-  padding-top: 50px;
-}
+
 .body {
   margin: auto;
   width: 50%;
   max-width: 500px;
   padding: 30px;
+}
+.entrar{
+  width: auto;
+  height: 15px;
 }
   .input {
     display:block;
@@ -49,13 +57,13 @@
     align-items: center;
     margin-top: 10px;
     input {
-      width: 50%;
-      background-color: rgba(235, 234, 230, 0.726);
+      width: 70%;
+      background-color: rgba(255, 255, 255, 0.603);
       border: 0px;
       outline: none;
       padding: 10px;
       padding-left: 30px;
-      border-radius: 1%;
+      border-radius: 5%;
       align-items: center;
     }
     .icon-input{
@@ -63,4 +71,5 @@
       margin-left: 50px;
     }
   }
+
 </style>
