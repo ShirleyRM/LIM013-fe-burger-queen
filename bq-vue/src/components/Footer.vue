@@ -1,6 +1,6 @@
 <template>
   <div id="footer">
-    <p>&copy; 2020 Developed by <a href="https://github.com/ShirleyRM/"></a>ShirleyRM<p>
+    <p class="f-Text">&copy; 2020 Developed by <a href="https://github.com/ShirleyRM/"></a>ShirleyRM</p>
   </div>
 </template>
 
@@ -16,14 +16,11 @@ export default {
   height: 30px;
   margin: auto;
   text-align: center;
-  color: white;
-  background-color: transparent;
-  .footerText {
+  justify-content: space-evenly;
+  color: rgba(37, 37, 37, 0.849);
+  .f-Text {
     margin-top: 10px;
     font-size: 14px;
-  }
-  .footerTextBold {
-    font-weight: bold;
   }
 }
 </style>

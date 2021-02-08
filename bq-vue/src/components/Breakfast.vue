@@ -1,17 +1,17 @@
 <template>
-<div>
-  <h3>Desayunos/h3>
-</div>
+  <div class="breakfast">
+    <div class="header">
+      <h3 class="title">Menú del día"</h3>
+    </div>
+  </div>
 </template>
 
 <script>
-import BreakfastBtn from '@/components/BreakfastBtn.vue';
 import { db } from '../db';
 
 export default {
   name: 'breakfast',
   components: {
-    BreakfastBtn,
   },
   data() {
     return {

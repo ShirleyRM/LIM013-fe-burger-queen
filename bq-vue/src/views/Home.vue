@@ -1,75 +1,70 @@
 <template>
   <div class="home">
-    <img alt="BQ logo" src="../assets/logo-BQ.png">
-    <!-- <HelloWorld msg="Welcome this ir you vue.js app"/> -->
-    <div class="body">
-      <h2 class="title">Inicia sesión</h2>
-        <div class="input">
-          <input type="text" placeholder="ejemplo@gmail.com">
-            <div class="icon-input"></div>
-        </div>
-        <div class="input">
-          <input type="text" placeholder="*******">
-            <div class="icon-input"></div>
-        </div>
+    <div class="homeMenu">
+      <img alt="BQ logo" src="../assets/logo-BQ.png">
+      <h1 class="welcome">Bienvenido a Burger Queen</h1>
+      <div class="container">
+          <div class="formContainer">
+            <Login />
+          </div>
+        <Footer/>
+      </div>
     </div>
-
-    <div class="entrar">
-      <button v-on:click="Entrar"><a href="/Waiter"></a>Entrar</button>
-    </div>
-
-    <Footer/>
   </div>
 </template>
 
 <script>
+import Login from '../components/Login.vue';
 import Footer from '../components/Footer.vue';
 
 export default {
   name: 'Home',
   components: {
+    Login,
     Footer,
   },
 };
 </script>
 
 <style lang="scss">
-
 .home {
-  margin: 0, auto;
   width: 100%;
   height: 735px;
+  margin: 0, auto;
 }
-
-.body {
+.homeMenu {
+  width: 90%;
+  height: 695px;
   margin: auto;
-  width: 50%;
-  max-width: 500px;
-  padding: 30px;
+  padding-top: 80px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #CC9933;
 }
-.entrar{
-  width: auto;
-  height: 15px;
+.logo {
+  width: 40%;
 }
-  .input {
-    display:block;
-    position: relative;
-    align-items: center;
-    margin-top: 10px;
-    input {
-      width: 70%;
-      background-color: rgba(255, 255, 255, 0.603);
-      border: 0px;
-      outline: none;
-      padding: 10px;
-      padding-left: 30px;
-      border-radius: 5%;
-      align-items: center;
-    }
-    .icon-input{
-      position: absolute;
-      margin-left: 50px;
-    }
-  }
+.container {
+  width: 100%;
+  height: 320px;
+  margin: auto;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: bottom;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+.formContainer {
+  width: 45%;
+  height: 270px;
+  margin: auto;
+  padding-top: 0px;
+  vertical-align: top;
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #13131367;
+}
 
 </style>
