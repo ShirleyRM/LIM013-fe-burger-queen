@@ -2,7 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/waiter">Soy Meserx</router-link> |
+      <router-link to="/waiter">Meserx</router-link> |
+      <router-link to="/boss">Cocinerx</router-link> |
       <router-link to="/logout">Cerrar Sesión</router-link>
     </div>
     <router-view/>
@@ -11,12 +12,17 @@
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 360px;
+  font-family: 'Balsamiq Sans', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #ffffff;
-  background-image: url(assets/fondo.jpg);
+  background-image: url(assets/fondo_.png);
   background-size: cover;
 }
 
