@@ -1,8 +1,6 @@
 <template>
   <div class="hello">
     <h2>{{ msg }}</h2>
-    <p>
-    </p>
     <h3>¡Inicia sesión y toma tu pedido!</h3>
   </div>
 </template>

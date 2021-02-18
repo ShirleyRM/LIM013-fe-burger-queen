@@ -17,11 +17,3 @@ export default {
 };
 
 </script>
-
-<style scoped>
-#botones{
-  justify-items: left;
-  border-radius: 6px;
-  text-transform: uppercase;
-}
-</style>

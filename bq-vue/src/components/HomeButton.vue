@@ -19,8 +19,8 @@ export default {
 <style lang="css" scoped>
 .select-btn {
     font-weight: 900 !important;
-    color:rgb(105, 102, 102)!important;
-    border-color: rgb(255, 251, 0);
+    color:rgb(27, 26, 26)!important;
+    border-color: 1px solid rgb(255, 251, 0);
     text-decoration: none;
 }
 
@@ -29,5 +29,7 @@ export default {
     padding: 25px;
     margin: auto;
 }
-
+.home-btn:hover{
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 </style>
