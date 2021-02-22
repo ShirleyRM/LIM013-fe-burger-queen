@@ -8,12 +8,12 @@
         <div class="col-12 col-md-12">
           <div class="row " style="text-align: center;">
             <HomeButton type="button" class="col-3 btn btn-outline-warning lg-button btn-block"
-            style="text-align: center;" nombre="Soy Meserx" href="/Waiter "/>
+            style="text-align: center;" nombre="Soy Meserx" router-link to="/waiter"/>
           </div>
           <br>
           <div class="row " style="text-align: center;">
             <HomeButton type="button" class="col-3 btn btn-outline-warning lg-button"
-            style="text-align: center;"  nombre="Soy Cocinerx" href="/Boss "/>
+            style="text-align: center;"  nombre="Soy Cocinerx" href="/boss"/>
           </div>
           <br>
           <div id=foot-section>

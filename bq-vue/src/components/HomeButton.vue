@@ -1,6 +1,6 @@
 <template>
     <div class="home-btn">
-      <a class="select-btn" :href="href">
+      <a class="select-btn" :href="enlace">
           {{nombre}}
       </a>
     </div>
