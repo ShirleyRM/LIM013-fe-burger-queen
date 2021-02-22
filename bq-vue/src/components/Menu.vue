@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="row">
   <div class="col-12 col-md-7 right">
       <form>
         <input v-model="name" placeholder="Cliente"/>
