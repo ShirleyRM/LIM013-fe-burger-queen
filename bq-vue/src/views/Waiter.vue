@@ -1,8 +1,11 @@
 <template>
-  <div class="header">
+  <div class="title">
     <h2>Hola, realiza tus pedidos aquí!</h2>
-    <BtnMenu />
-    <Menu />
+    <h4>Toma el pedido del cliente de las 2 opciones que tenemos:</h4>
+    <div>
+      <BtnMenu />
+      <Menu />
+    </div>
   </div>
 </template>
 

@@ -7,8 +7,23 @@
       <router-link to="/logout">Logout</router-link>
     </div>
     <router-view/>
+    <div id=foot-section>
+      <Footer />
+    </div>
   </div>
 </template>
+
+<script>
+
+import Footer from '@/components/Footer.vue';
+
+export default {
+  name: 'App',
+  components: {
+    Footer,
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
